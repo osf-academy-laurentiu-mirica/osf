@@ -67,7 +67,7 @@
 
 /* HEADER */
 #header > .pc > div:first-child {
-    /* content: url('/img/pc/logo.jpg'); */
+    content: '';
 }
 
 /* LOG IN BUTTON */
