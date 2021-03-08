@@ -1,5 +1,5 @@
 .pc {
-    display: none!important;
+    display: none !important;
 }
 
 .mainWrapper {
@@ -10,7 +10,7 @@
     justify-items: center;
 }
 
-.mainWrapper > div {
+.mainWrapper>div {
     border: 1px dashed grey;
     width: 100%;
     display: flex;
@@ -66,7 +66,7 @@
 
 
 /* HEADER */
-#header > .pc > div:first-child {
+#header>.pc>div:first-child {
     content: '';
 }
 
@@ -88,14 +88,17 @@
     color: rgb(69, 65, 62 255);
     text-align: left;
 }
+
 #cookies_text,
-#cookies_title {    
+#cookies_title {
     display: inline-block;
 }
+
 #cookies_title {
     color: rgba(132, 188, 34, 255);
     font-size: 16pt;
 }
+
 #cookies_button {
     font-size: 31.65455pt;
     color: rgba(255, 255, 255, 255);
@@ -107,33 +110,38 @@
 #mobileNavMenu,
 #close_cookies {
     display: block;
-    width:fit-content;
+    width: fit-content;
     cursor: pointer;
     position: fixed;
     top: 1rem;
     left: 1rem;
-  }
-  
-  .bar1, .bar2, .bar3 {
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 1rem;
     height: calc(1rem / 7);
     background-color: #333;
     margin: calc(1rem / 5.8) 0;
     transition: 0.4s;
-  }
-  
-  .opened_menu .bar1 {
+}
+
+.opened_menu .bar1 {
     -webkit-transform: rotate(-45deg) translate(calc(1rem / -3.9), calc(1rem / -5.8));
     transform: rotate(-45deg) translate(calc(1rem / -4.375), calc(1rem / 4.375));
-  }
-  
-  .opened_menu .bar2 {opacity: 0;}
-  
-  .opened_menu .bar3 {
+}
+
+.opened_menu .bar2 {
+    opacity: 0;
+}
+
+.opened_menu .bar3 {
     -webkit-transform: rotate(45deg) translate(calc(1rem / -4.375), calc(1rem / -4.375));
     transform: rotate(45deg) translate(calc(1rem / -4.375), calc(1rem / -4.375));
-  }
-  /* burger menu end */
+}
+
+/* burger menu end */
 
 
 /* final media touch */
@@ -144,11 +152,11 @@
     }
 
     .mobile {
-        display: none!important;
+        display: none !important;
     }
 
     .pc {
-        display: flex!important;
+        display: flex !important;
     }
 
     .mainWrapper {
@@ -161,7 +169,7 @@
     .mainWrapper>div {
         border: 1px solid grey;
         display: flex;
-        height: 100%!important;
+        height: 100% !important;
         place-content: center;
         justify-content: center;
         margin: auto;
@@ -282,18 +290,17 @@
     }
 
     /* MENU */
-    #nav > .pc > div::after {
+    #nav>.pc>div::after {
         content: "";
     }
-    #nav > .pc > div {
+
+    #nav>.pc>div {
         border: 1px solid grey;
         padding-left: .5rem;
         padding-right: .5rem;
     }
 }
 
-@media (min-width: 1280px) {    
-}
+@media (min-width: 1280px) {}
 
-@media print {
-}
+@media print {}
