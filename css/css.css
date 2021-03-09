@@ -1,3 +1,46 @@
+/* INITIAL GENERIC RULES */
+#logo3 {
+    display: grid;
+    grid-template-columns: 63px 80px;
+}
+#header a:hover {
+    text-decoration: none!important;
+    color: rebeccapurple;
+}
+#logo3_logo {
+    width: 63px;
+    height: 65px;
+}
+#logo3_logo {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+#logo3 > div {border: 1px solid blue;}
+#logo3_OSF {
+    font-family: Lato-ExtraBold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 31.65455pt;
+    color: rgba(1, 24, 71, 255);
+    text-align: left;
+    grid-column: 2;
+    width: 73px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 1px;
+}
+
+#logo3_Academy {
+    font-family: Lato-ExtraBold, Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 18pt;
+    color: rgba(132, 188, 34, 255);
+    text-align: left;
+    grid-column: 2;
+    grid-row: 2;
+    width: 74px;
+    height: 17px;
+    margin: auto;
+    margin-top: 1px;
+}
+
 .pc {
     display: none !important;
 }
@@ -145,6 +188,8 @@
 
 
 /* final media touch */
+
+/* first break-point */
 @media (min-width: 768px) {
     .noDisplay {
         display: initial;
@@ -222,7 +267,7 @@
     #header {
         grid-row: 1;
         grid-column-start: 2;
-        grid-column-end: 2;
+        grid-column-end: 7;
     }
 
     #load_more {
@@ -239,7 +284,7 @@
 
     #nav {
         grid-row: 1;
-        grid-column-start: 3;
+        grid-column-start: 7;
         grid-column-end: 38;
     }
 
