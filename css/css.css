@@ -1,11 +1,14 @@
 /* INITIAL GENERIC RULES */
+img {
+    border: 0;
+    border-image-width: 0;
+}
 #logo3 {
     display: grid;
     grid-template-columns: 63px 80px;
 }
 #header a:hover {
-    text-decoration: none!important;
-    color: rebeccapurple;
+    text-decoration: none;
 }
 #logo3_logo {
     width: 63px;
@@ -15,7 +18,6 @@
     grid-column: 1;
     grid-row: 1 / span 2;
 }
-#logo3 > div {border: 1px solid blue;}
 #logo3_OSF {
     font-family: Lato-ExtraBold, AdobeInvisFont, MyriadPro-Regular;
     font-size: 31.65455pt;
@@ -24,8 +26,6 @@
     grid-column: 2;
     width: 73px;
     height: 25px;
-    margin: auto;
-    margin-bottom: 1px;
 }
 
 #logo3_Academy {
@@ -37,8 +37,6 @@
     grid-row: 2;
     width: 74px;
     height: 17px;
-    margin: auto;
-    margin-top: 1px;
 }
 
 .pc {
@@ -54,7 +52,7 @@
 }
 
 .mainWrapper>div {
-    border: 1px dashed grey;
+    /* border: 1px dashed grey; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -206,21 +204,22 @@
 
     .mainWrapper {
         grid-template-columns: .5fr repeat(59, 1fr) .5fr;
-        border: 1px solid grey;
+        /* border: 1px solid grey; */
         grid-gap: 5px;
         margin-top: .5rem;
     }
 
     .mainWrapper>div {
-        border: 1px solid grey;
+        /* border: 1px solid grey; */
         display: flex;
         height: 100% !important;
         place-content: center;
         justify-content: center;
         margin: auto;
         padding: auto;
+        line-height: 2rem;
     }
-
+    
     #nav {
         position: initial;
         display: flex;
@@ -267,7 +266,7 @@
     #header {
         grid-row: 1;
         grid-column-start: 2;
-        grid-column-end: 7;
+        grid-column-end: 8;
     }
 
     #load_more {
