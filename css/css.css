@@ -62,7 +62,7 @@ img {
     justify-items: center;
 }
 
-.mainWrapper>div {
+.mainWrapper > div {
     /* border: 1px dashed grey; */
     width: 100%;
     display: flex;
