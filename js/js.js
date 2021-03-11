@@ -6,7 +6,8 @@ function mobileNavMenu(x) {
 }
 
 function showHideMe(domElement) {
-    if (getComputedStyle(domElement).display === "none") {
+    const newLocal = getComputedStyle(domElement).display === "none";
+    if (newLocal) {
         domElement.style.display = 'inherit';
     } else {
         domElement.style.display = '';

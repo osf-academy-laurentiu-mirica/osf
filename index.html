@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- reset across browsers -->
-    <link rel='stylesheet' href='css/reset.css'>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
         integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- dedicated -->
-    <link rel='stylesheet' href='css/css.css'>
+    <link rel="stylesheet" href="css/css.css">
     <title>OSF Academy</title>
 </head>
 
@@ -20,25 +18,39 @@
 <body>
     <div class="mainWrapper">
         <!-- banner -->
-        <div id='banner'>banner</div>
+        <div id="banner" class="mobile">
+            <!-- mobile -->
+            <div class="card w-100">
+                <div class="card-body text-center text-info">
+                    <div id="banner_title">
+                        Banner OSF Theme
+                    </div>
+                    <div id="banner_content">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    </div>
+                </div>
+            </div>
+
+            <!-- pc -->
+        </div>
 
         <!-- featured products -->
-        <div id='featured_products' class='pc'>featured products</div>
+        <div id="featured_products" class="pc">featured products</div>
 
         <!-- follow -->
-        <div id='follow' class='pc'>follow</div>
+        <div id="follow" class="pc">follow</div>
 
         <!-- footer -->
-        <div id='footer'>footer</div>
+        <div id="footer">footer</div>
 
         <!-- fp_controls -->
-        <div id='fp_controls' class='pc'>fp controls</div>
+        <div id="fp_controls" class="pc">fp controls</div>
 
         <!-- fp_cards -->
-        <div id='fp_cards' class='pc'>fp_cards</div>
+        <div id="fp_cards" class="pc">fp_cards</div>
 
         <!-- header -->
-        <div id='header'>
+        <div id="header">
             <!-- for mobile -->
             <div class="mobile">
                 <a href="index.html">
@@ -64,65 +76,164 @@
         </div>
 
         <!-- load_more -->
-        <div id='load_more' class='pc'>load more</div>
+        <div id="load_more" class="pc">load more</div>
 
         <!-- locale -->
-        <div id='locale' class="align-items-center">locale</div>
+        <!-- mobile -->
+        <div id="locale" class="align-items-center">
+            <div class="mobile">
+                <div class="card text-center">
+                    <img class="card-img-top" src="/img/mobile/car Layer 151@1X.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="">have money for gambeling ? make some donations ...</p>
+                        <span>$ 799.55</span>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="/img/mobile/product-2.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="">hate doing repetitive tasks ? start automating !</p>
+                        <span>$ 99.33</span>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="/img/mobile/product-3.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="">blog or video channel ? this is the question nowadays.</p>
+                        <span>$ 111.99</span>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="/img/mobile/product-5.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="">come and get it! the future starts now with our products!</p>
+                        <span>$ 2222</span>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="/img/mobile/product-7.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="">big fan of premium products ? you must hate bathing ...</p>
+                        <span>$ 123.44</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC -->
+            <div class="pc">locale</div>
+        </div>
 
         <!-- nav -->
-        <div id='nav'>
+        <div id="nav" class="w-100">
             <!-- for pc -->
             <div class="pc my-auto mr-0 ml-auto">
-                <div id="services d-flex flex-column mr-0">
-                    SERVICES
+                <div class="services d-flex flex-column mr-0">
+                    <div class="d-flex">
+                        <div>
+                            SERVICES
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
                 </div>
-                <div id="company d-flex flex-column mr-0">
+                <div class="company d-flex flex-column mr-0">
                     COMPANY
                 </div>
-                <div id="library d-flex flex-column mr-0">
+                <div class="library d-flex flex-column mr-0">
                     LIBRARY
                 </div>
-                <div id="contact_us d-flex flex-column mr-0">
+                <div class="contact_us d-flex flex-column mr-0">
                     CONTACT US
                 </div>
             </div>
             <!-- for mobile -->
-            <div class="mobile">
-                <div>
-                    SERVICES
-                </div>
-                <div>
-                    COMPANY
-                </div>
-                <div>
-                    LIBRARY
-                </div>
-                <div>
-                    CONTACT US
+            <div class="mobile w-100 p-3 bg-dark text-white" style="clear: both;">
+                <div class="d-flex flex-column w-100">
+                    <div class="d-flex justify-content-between services_menu">
+                        <div>
+                            SERVICES
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between services_menu_options">
+                        <div>
+                            product categories
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between services_menu_options">
+                        <div>
+                            sale
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            company
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            library
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            contact us
+                        </div>
+                        <div class="pl-2">
+                            <img src="/img/pc/arrow_down.png" />
+                        </div>
+                    </div>
+                    <img src="/img/mobile/card Layer 162@1X.png" alt="" srcset="">
                 </div>
             </div>
         </div>
 
         <!-- p_cards -->
-        <div id='p_cards'>p_cards</div>
+        <div id="p_cards" class="pc">p_cards</div>
 
         <!-- personals -->
-        <div id='personals' class="align-items-center">personals</div>
+        <div id="personals" class="align-items-center">personals</div>
 
         <!-- populars -->
-        <div id='populars' class='pc'>populars</div>
+        <div id="populars" class="pc">populars</div>
 
         <!-- s_card1 -->
-        <div id='s_card1'>s_card1</div>
+        <div id="s_card1">s_card1</div>
 
         <!-- s_card2 -->
-        <div id='s_card2'>s_card2</div>
+        <div id="s_card2">s_card2</div>
 
         <!-- s_card3 -->
-        <div id='s_card3'>s_card3</div>
+        <div id="s_card3">s_card3</div>
 
         <!-- slider -->
-        <div id='slider'>slider</div>
+        <div id="slider">
+            <!-- mobile -->
+            <div class="mobile d-flex justify-content-between align-content-center mb-4">
+                <div class="marble active_marble"></div>
+                <div class="marble"></div>
+                <div class="marble"></div>
+                <div class="marble"></div>
+                <div class="marble"></div>
+            </div>
+            <!-- pc -->
+            <div class="pc">PC slider</div>
+        </div>
     </div>
 
     <!-- ### others ### -->
@@ -134,7 +245,7 @@
     </div>
 
     <!-- login -->
-    <form id="login" class='modal fade show py-3 mx-5 rounded'>
+    <form id="login" class="modal fade show py-3 mx-5 rounded">
         <div class="form-group bg-white p-2 my-0">
             <input type="email" class="form-control-sm w-100" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Enter email">
@@ -142,8 +253,8 @@
         <div class="form-group bg-white p-2 my-0">
             <input type="password" class="form-control-sm w-100" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="d-flex bg-white px-1 pb-1" style='width: 100%; justify-content: space-between;'>
-            <button id="cancelLogin" type='button' class="btn btn-secondary" data-toggle="modal"
+        <div class="d-flex bg-white px-1 pb-1" style="width: 100%; justify-content: space-between;">
+            <button id="cancelLogin" type="button" class="btn btn-secondary" data-toggle="modal"
                 data-target="#login">Cancel</button>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
@@ -153,7 +264,7 @@
     <button id="login_btn" type="button" class="btn-sm btn-primary mobile" data-toggle="modal" data-target="#login">Log
         in</button>
     <!-- cookies -->
-    <div id="cookies" class='modal bg-white' style='display: blocks;'>
+    <div id="cookies" class="modal bg-white" style="display: blocks;">
         <div id="close_cookies" class="opened_menu">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -162,7 +273,7 @@
         <div id="cookies_title">
             This website uses cookies
         </div>
-        <div id='cookies_text'>OSF uses its own and third-party cookies for statistical purposes, to know your
+        <div id="cookies_text">OSF uses its own and third-party cookies for statistical purposes, to know your
             preferences, for website
             performance
             and interaction with social media offering publicity tailored to your interests. If you continue browsing,
@@ -170,6 +281,15 @@
             You can expand this information consulting our Cookies Policy Page.
         </div>
         <div id="cookies_button">ACCEPT</div>
+    </div>
+    <!-- nav submenu -->
+    <div id="services_options" class="d-flex flex-column submenu">
+        <div>
+            product categories
+        </div>
+        <div>
+            sale
+        </div>
     </div>
 
 
@@ -184,7 +304,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
     </script>
-    <script src='js/js.js'></script>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
