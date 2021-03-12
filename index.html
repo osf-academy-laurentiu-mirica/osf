@@ -41,7 +41,57 @@
         <div id="follow" class="pc">follow</div>
 
         <!-- footer -->
-        <div id="footer">footer</div>
+        <div id="footer">
+            <!-- pc -->
+            <div class="pc">footer</div>
+            <!-- mobile -->
+            <div class="mobile bg-white w-100 d-flex flex-column">
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                        copy right
+                    </div>
+                    <div class="pl-2">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                        contact
+                    </div>
+                    <div class="pl-2">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                        categories
+                    </div>
+                    <div class="pl-2">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between m-3">
+                    <div>
+                        about
+                    </div>
+                    <div class="pl-2">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- fp_controls -->
         <div id="fp_controls" class="pc">fp controls</div>
@@ -52,10 +102,17 @@
         <!-- header -->
         <div id="header">
             <!-- for mobile -->
-            <div class="mobile">
-                <a href="index.html">
-                    <img src="img/mobile/logo.png" alt="OSF Logo" srcset="">
-                </a>
+            <div class="mobile w-100">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div id="mobileNavMenu" onclick="mobileNavMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <a href="index.html">
+                        <img src="img/mobile/logo.png" alt="OSF Logo" srcset="">
+                    </a>
+                </div>
             </div>
             <!-- for pc -->
             <div class="pc w-100">
@@ -89,28 +146,28 @@
                         <span>$ 799.55</span>
                     </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center card-hidden">
                     <img class="card-img-top" src="/img/mobile/product-2.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="">hate doing repetitive tasks ? start automating !</p>
                         <span>$ 99.33</span>
                     </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center card-hidden">
                     <img class="card-img-top" src="/img/mobile/product-3.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="">blog or video channel ? this is the question nowadays.</p>
                         <span>$ 111.99</span>
                     </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center card-hidden">
                     <img class="card-img-top" src="/img/mobile/product-5.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="">come and get it! the future starts now with our products!</p>
                         <span>$ 2222</span>
                     </div>
                 </div>
-                <div class="card text-center">
+                <div class="card text-center card-hidden">
                     <img class="card-img-top" src="/img/mobile/product-7.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="">big fan of premium products ? you must hate bathing ...</p>
@@ -148,56 +205,62 @@
                 </div>
             </div>
             <!-- for mobile -->
-            <div class="mobile w-100 p-3 bg-dark text-white" style="clear: both;">
-                <div class="d-flex flex-column w-100">
-                    <div class="d-flex justify-content-between services_menu">
-                        <div>
-                            SERVICES
-                        </div>
-                        <div class="pl-2">
-                            <img src="/img/pc/arrow_down.png" />
-                        </div>
+            <div class="mobile d-flex flex-column text-white mx-0 p-3">
+                <div class="d-flex justify-content-between services_menu">
+                    <div>
+                        SERVICES
                     </div>
-                    <div class="d-flex justify-content-between services_menu_options">
-                        <div>
-                            product categories
-                        </div>
-                        <div class="pl-2">
-                            <img src="/img/pc/arrow_down.png" />
-                        </div>
+                    <div class="flt-invert d-flex flex-column h-100 justify-content-center">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
                     </div>
-                    <div class="d-flex justify-content-between services_menu_options">
-                        <div>
-                            sale
-                        </div>
-                        <div class="pl-2">
-                            <img src="/img/pc/arrow_down.png" />
-                        </div>
+                </div>
+                <div class="d-flex justify-content-between services_menu_options">
+                    <div>
+                        product categories
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            company
-                        </div>
-                        <div class="pl-2">
-                            <img src="/img/pc/arrow_down.png" />
-                        </div>
+                    <div class="flt-invert d-flex flex-column h-100 justify-content-center">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            library
-                        </div>
-                        <div class="pl-2">
-                            <img src="/img/pc/arrow_down.png" />
-                        </div>
+                </div>
+                <div class="d-flex justify-content-between services_menu_options">
+                    <div>
+                        sale
                     </div>
-                    <div class="d-flex justify-content-between">
-                        <div>
-                            contact us
-                        </div>
-                        <div class="pl-2">
-                            <img src="/img/pc/arrow_down.png" />
-                        </div>
+                    <div class="flt-invert d-flex flex-column h-100 justify-content-center">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
                     </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        company
+                    </div>
+                    <div class="flt-invert d-flex flex-column h-100 justify-content-center">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        library
+                    </div>
+                    <div class="flt-invert d-flex flex-column h-100 justify-content-center">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        contact us
+                    </div>
+                    <div class="flt-invert d-flex flex-column h-100 justify-content-center">
+                        <img class="open_me" src="/img/pc/arrow_down.png" />
+                        <img class="close_me" src="/img/mobile/arrow_up.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="jingle" class="m-auto d-flex justify-content-center pt-5">
                     <img src="/img/mobile/card Layer 162@1X.png" alt="" srcset="">
                 </div>
             </div>
@@ -207,19 +270,106 @@
         <div id="p_cards" class="pc">p_cards</div>
 
         <!-- personals -->
-        <div id="personals" class="align-items-center">personals</div>
+        <div id="personals" class="align-items-center">
+            <!-- pc -->
+            <div class="pc">personals</div>
+            <!-- mobile -->
+            <div class="mobile w-100 align-items-center">
+                <div class="mobile w-75 d-flex justify-content-around m-auto py-3">
+                    <div>
+                        <img src="/img/mobile/Search Information. Attribute as Designmodo from Flaticon.com@1X.png"
+                            alt="icon description text" srcset="">
+                    </div>
+                    <div>
+                        <img src="/img/mobile/Profile User Outline. Attribute as Situ Herrera from Flaticon.com@1X.png"
+                            alt="icon description text" srcset="">
+                    </div>
+                    <div>
+                        <img src="/img/mobile/Heart Outline Rounded Shape. Attribute as Freepik from Flaticon.com@1X.png"
+                            alt="icon description text" srcset="">
+                    </div>
+                    <div>
+                        <img src="/img/mobile/Bag For Shopping. Attribute as SimpleIcon from Flaticon.com@1X.png"
+                            alt="icon description text" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- populars -->
         <div id="populars" class="pc">populars</div>
 
         <!-- s_card1 -->
-        <div id="s_card1">s_card1</div>
+        <div id="s_card1" class="bg-dark">
+            <!-- pc -->
+            <div class="pc">
+                s_card1
+            </div>
+
+            <!-- mobile -->
+            <div class="mobile d-flex flex-row-reverse w-100">
+                <div class="d-flex flex-column">
+                    <div class="title">
+                        focus
+                    </div>
+                    <div class="content">
+                        Our unwavering focus on superior service delivery and building next generation competencies
+                    </div>
+                </div>
+                <div class="icon d-flex w-50 justify-content-center">
+                    <img src="/img/mobile/Delivery Packages On A Trolley. Attribute as Freepik from Flaticon.com@1X.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </div>
 
         <!-- s_card2 -->
-        <div id="s_card2">s_card2</div>
+        <div id="s_card2" class="bg-dark">
+            <!-- pc -->
+            <div class="pc">
+                s_card2
+            </div>
+
+            <!-- mobile -->
+            <div class="mobile d-flex w-100">
+                <div class="d-flex flex-column">
+                    <div class="title">
+                        method
+                    </div>
+                    <div class="content">
+                        A standardized methodology designed to deliver measurable business results and predictable costs
+                    </div>
+                </div>
+                <div class="icon d-flex w-50 justify-content-center">
+                    <img src="/img/mobile/Triangular Arrows Sign For Recycle. Attribute as Freepik from Flaticon.com@1X.png"
+                        alt="" srcset="">
+                </div>
+            </div>
+        </div>
 
         <!-- s_card3 -->
-        <div id="s_card3">s_card3</div>
+        <div id="s_card3" class="bg-dark">
+            <!-- pc -->
+            <div class="pc">
+                s_card3
+            </div>
+
+            <!-- mobile -->
+            <div class="mobile d-flex flex-row-reverse w-100">
+                <div class="d-flex flex-column">
+                    <div class="title">
+                        knowledge
+                    </div>
+                    <div class="content">
+                        A highly skilled, proactive workforce that reliably improves each client’s ROI while mitigating
+                        their business risk
+                    </div>
+                </div>
+                <div class="icon d-flex w-50 justify-content-center">
+                    <img src="/img/mobile/clipboard-icon.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
 
         <!-- slider -->
         <div id="slider">
@@ -237,12 +387,6 @@
     </div>
 
     <!-- ### others ### -->
-    <!-- ~ mobile only ~ -->
-    <div class="mobile" id="mobileNavMenu" onclick="mobileNavMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
 
     <!-- login -->
     <form id="login" class="modal fade show py-3 mx-5 rounded">
@@ -253,7 +397,7 @@
         <div class="form-group bg-white p-2 my-0">
             <input type="password" class="form-control-sm w-100" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="d-flex bg-white px-1 pb-1" style="width: 100%; justify-content: space-between;">
+        <div class="d-flex bg-white px-1 pb-1 justify-content-around w-100">
             <button id="cancelLogin" type="button" class="btn btn-secondary" data-toggle="modal"
                 data-target="#login">Cancel</button>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -283,7 +427,7 @@
         <div id="cookies_button">ACCEPT</div>
     </div>
     <!-- nav submenu -->
-    <div id="services_options" class="d-flex flex-column submenu">
+    <div id="services_options" class="pc d-flex flex-column submenu">
         <div>
             product categories
         </div>
